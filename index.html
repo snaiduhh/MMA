@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio • Ralph Snider Ordonez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .text-gradient { background: linear-gradient(to right, #818cf8, #e879f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="text-slate-400 antialiased selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden relative min-h-screen">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-indigo-900/20 blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-fuchsia-900/10 blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- Floating Pill Header -->
+    <div class="w-full flex justify-center fixed top-6 z-50 px-4">
+        <header class="glass-panel rounded-full px-6 py-3 flex justify-between items-center w-full max-w-5xl shadow-2xl">
+            <div class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 shadow-[0_0_12px_rgba(99,102,241,0.8)] animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-widest text-slate-100">Hub</span>
+            </div>
+            <div class="text-xs md:text-sm font-medium tracking-wide text-slate-300">
+                Ralph Snider Ordonez <span class="text-indigo-500/50 mx-2">/</span> BSIT-NS-2A
+            </div>
+        </header>
+    </div>
+
+    <!-- Centered Hero Structure -->
+    <section class="pt-48 pb-20 px-6 max-w-5xl mx-auto text-center relative z-10 flex flex-col items-center">
+        <div class="inline-block px-4 py-1.5 rounded-full glass-panel mb-6">
+            <p class="text-xs font-bold tracking-[0.2em] text-indigo-400 uppercase">Multimedia & Authoring</p>
+        </div>
+        <h1 class="text-6xl md:text-8xl font-extrabold text-white leading-tight tracking-tight mb-8">
+            Digital <span class="text-gradient">Motion.</span>
+        </h1>
+        <p class="text-slate-400 max-w-2xl text-lg leading-relaxed mb-12">
+            A showcase of technical workflows in 3D visualization and frame-by-frame rotoscoping. Documented and authored by Ralph Snider Ordonez.
+        </p>
+    </section>
+
+    <!-- Bento Box Grid Structure -->
+    <section class="pb-24 px-6 max-w-6xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- Project 1 Card -->
+            <a href="orbital.html" class="block group relative rounded-[2rem] overflow-hidden glass-panel hover:bg-white/[0.05] transition-all duration-500 shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1">
+                <div class="p-8 md:p-10 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-10">
+                        <span class="text-xs font-bold tracking-[0.2em] text-slate-500 uppercase group-hover:text-indigo-400 transition-colors">Project 01</span>
+                        <div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-300 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">Orbital Motion Study</h2>
+                    <p class="text-sm leading-relaxed mb-8 flex-grow text-slate-400">A cinematic project focused on 3D motion, scene presentation, and an integrated interactive planetary calculator.</p>
+                    
+                    
+<div class="w-full aspect-video bg-black/50 rounded-2xl border border-white/5 relative overflow-hidden mb-6">
+    <iframe class="absolute inset-0 w-full h-full"
+        src="https://www.youtube.com/embed/z5vGXTpnzJ8"
+        frameborder="0"
+        allowfullscreen></iframe>
+</div>
+
+
+                    <div class="flex gap-2">
+                        <span class="px-4 py-1.5 bg-black/40 rounded-full text-xs font-medium text-slate-300 backdrop-blur-sm border border-white/5">3D Rendering</span>
+                        <span class="px-4 py-1.5 bg-black/40 rounded-full text-xs font-medium text-slate-300 backdrop-blur-sm border border-white/5">Blender</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2 Card -->
+            <a href="rotoscope.html" class="block group relative rounded-[2rem] overflow-hidden glass-panel hover:bg-white/[0.05] transition-all duration-500 shadow-xl hover:shadow-fuchsia-500/10 hover:-translate-y-1">
+                <div class="p-8 md:p-10 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-10">
+                        <span class="text-xs font-bold tracking-[0.2em] text-slate-500 uppercase group-hover:text-fuchsia-400 transition-colors">Project 02</span>
+                        <div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-300 group-hover:bg-fuchsia-500 group-hover:text-white transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">Rotoscope Case Study</h2>
+                    <p class="text-sm leading-relaxed mb-8 flex-grow text-slate-400">A 60-second stylized study of traced movement, isolation techniques, and complete weekly documentation.</p>
+                    
+                    
+<div class="w-full aspect-video bg-black/50 rounded-2xl border border-white/5 relative overflow-hidden mb-6">
+    <iframe class="absolute inset-0 w-full h-full"
+        src="https://www.youtube.com/embed/fowApmqRvxY"
+        frameborder="0"
+        allowfullscreen></iframe>
+</div>
+
+
+                    <div class="flex gap-2 flex-wrap items-center">
+                        <span class="px-4 py-1.5 bg-black/40 rounded-full text-xs font-medium text-slate-300 backdrop-blur-sm border border-white/5">After Effects</span>
+                        <span class="px-4 py-1.5 bg-black/40 rounded-full text-xs font-medium text-slate-300 backdrop-blur-sm border border-white/5">Video Editing</span>
+                        
+                        <!-- Added Reference Video Link -->
+                        <object><a href="https://www.youtube.com/watch?v=xW2yArNI_5A&list=RDxW2yArNI_5A&start_radio=1" target="_blank" class="px-4 py-1.5 bg-fuchsia-500/10 border border-fuchsia-500/30 text-fuchsia-300 hover:bg-fuchsia-500 hover:text-white transition-colors text-xs font-semibold rounded-full ml-auto">
+                            Reference Video ↗
+                        </a></object>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>
