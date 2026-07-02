@@ -103,7 +103,26 @@
         <div class="h-px bg-white/10 flex-grow"></div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
+
+        <div class="glass-panel rounded-[2rem] p-8 hover:bg-white/[0.05] transition-colors flex flex-col group relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="w-full aspect-video bg-black/50 rounded-xl border border-white/5 mb-6 relative overflow-hidden z-10">
+                <video autoplay="" class="absolute inset-0 w-full h-full object-cover" controls="" loop="" muted="" playsinline=""><source src="sun.mkv" type="video/mp4"/></video>
+                <a href="#" target="_blank" class="absolute bottom-3 right-3 bg-red-600/90 hover:bg-red-500 text-white p-2 rounded-lg backdrop-blur-md transition-all z-20 shadow-[0_0_15px_rgba(220,38,38,0.4)] hover:scale-105" title="Watch on YouTube">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+            </div>
+            <div class="flex-grow relative z-10">
+                <h3 class="text-3xl font-bold text-white mb-6">The Sun</h3>
+                <div class="space-y-4 text-sm text-slate-300 mb-8">
+                    <div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Type:</span> <span class="text-white font-medium">G-Type Main-Sequence</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Status:</span> <span class="text-white font-medium">Center of System</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Galactic Orbit:</span> <span class="text-white font-medium">~230M Earth yrs</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Diameter:</span><span class="text-white font-medium">1,392,700 km</span></div><div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Distance from Earth:</span><span class="text-white font-medium">149.6 million km</span></div><div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Rotation:</span><span class="text-white font-medium">27 Earth days</span></div><div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Planets:</span><span class="text-white font-medium">8</span></div><div class="flex justify-between border-b border-white/5 pb-3"><span class="text-slate-300">Gravity:</span><span class="text-white font-medium">274 m/s²</span></div><div class="flex justify-between pb-2"><span class="text-slate-300">Temperature:</span><span class="text-white font-medium">5,500°C (Surface)</span></div>
+                </div>
+                <p class="text-xs text-slate-500 leading-relaxed">The yellow dwarf star at the center of our solar system, driving weather, ocean currents, seasons, and life itself.</p><div class="flex flex-wrap gap-2 mt-6"><span class="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300 text-xs">Star</span><span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs">Plasma</span></div>
+            </div>
+        </div>
         <div class="glass-panel rounded-[2rem] p-8 hover:bg-white/[0.05] transition-colors flex flex-col group relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div class="w-full aspect-video bg-black/50 rounded-xl border border-white/5 mb-6 relative overflow-hidden z-10">
@@ -286,8 +305,39 @@
         
     </div>
 </section>
+
+<section class="py-8 px-6 max-w-6xl mx-auto relative z-10">
+    <div class="glass-panel rounded-[2rem] p-6 flex flex-col md:flex-row items-center justify-between gap-6 hover:bg-white/[0.05] transition-all">
+        <div class="flex items-center gap-6 text-left">
+            <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center p-3 shadow-inner">
+                <svg class="w-8 h-8" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 6L28.5 26H47L35.5 6H17Z" fill="#FFC107"/>
+                    <path d="M11 16L22.5 36L13.5 44L2 24L11 16Z" fill="#1976D2"/>
+                    <path d="M13.5 44H36.5L47 26H24L13.5 44Z" fill="#4CAF50"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-white mb-1">Project Assets & Working Files</h3>
+                <p class="text-sm text-slate-400">Access the full Blender models, textures, and high-res renders directly from Google Drive.</p>
+            </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1Bim6mDxcAUFVz-nnf-eAR26keG5F3K9X?usp=sharing" target="_blank" class="bg-indigo-500 hover:bg-indigo-400 text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] whitespace-nowrap hover:-translate-y-0.5">
+            Open Drive Folder
+        </a>
+    </div>
+</section>
+
 <footer class="py-12 mt-10 border-t border-white/5 bg-black/50 backdrop-blur-md text-center px-6 relative z-10">
     <p class="text-slate-500 text-sm font-medium">
+         <p class="text-slate-400 text-sm font-medium">
+        © 2026 Ralph Snider Ordonez. All Rights Reserved.
+    </p>
+
+    <p class="text-slate-500 text-xs mt-2">
+        This website, its source code, 3D models, animations, videos, images, and written content
+        are the intellectual property of Ralph Snider Ordonez. Unauthorized copying,
+        redistribution, or modification without permission is prohibited.
+    </p>
         Project and contents authored by Ralph Snider Ordonez.
     </p>
 </footer>
